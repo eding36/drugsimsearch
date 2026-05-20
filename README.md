@@ -1,6 +1,6 @@
 # drugSimSearch — MolGAT Molecular Similarity Search
 
-A Graph Attention Network that embeds molecules into a 128-dimensional space where cosine similarity reflects chemical similarity. Trained on ZINC250k with a combined Tanimoto + physicochemical property objective.
+A Graph Attention Network that embeds molecules into a 128-dimensional space where cosine similarity reflects chemical similarity. With this package, you can embed (embed.py), cluster (plot_umap.py), and perform similarity searches on a large chemical library of your choice (query.py) of your molecules of interest! Trained on ZINC250k with a combined Tanimoto + physicochemical property objective.
 
 ---
 
