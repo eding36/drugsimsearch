@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(MODAL_PROFILE=chemicalbinding modal app list)"
-    ]
-  }
-}

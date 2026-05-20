@@ -1,0 +1,27 @@
+# Cache and model artifacts
+.cache/
+runs/
+*.ckpt
+*.pt
+*.npy
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Data (download separately)
+data/zinc250k.csv
+data/*.csv
+data/*.smi.gz
+
+# IDE / local settings
+.claude/
+
+# Env
+.env
+*.env
