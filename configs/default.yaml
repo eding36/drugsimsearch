@@ -1,0 +1,42 @@
+model:
+  atom_feat_dim: 56
+  bond_feat_dim: 12
+  prop_dim: 12
+  gat_hidden_dim: 64
+  gat_heads: 4
+  gat_layers: 3
+  gat_dropout: 0.1
+  prop_hidden_dims: [64, 128]
+  fusion_hidden_dim: 256
+  embedding_dim: 128
+  fusion_dropout: 0.1
+
+training:
+  batch_size: 32
+  epochs: 200
+  lr: 1.0e-3
+  weight_decay: 1.0e-5
+  warmup_epochs: 10
+  grad_clip: 1.0
+  val_split: 0.1
+  seed: 42
+
+loss:
+  tanimoto_weight: 0.8
+  property_weight: 0.2
+  fp_radius: 2
+  fp_nbits: 2048
+  use_upper_tri: true
+  map_tanimoto_threshold: 0.6
+
+data:
+  smiles_file: "data/sample.smi"
+  smiles_col: null
+  cache_dir: ".cache"
+
+logging:
+  save_dir: "runs"
+  checkpoint_every: 10
+  log_every: 1
+  plot_every: 25
+  map_ever: 100
