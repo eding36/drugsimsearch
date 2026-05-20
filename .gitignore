@@ -1,6 +1,5 @@
 # Cache and model artifacts
 .cache/
-runs/
 *.ckpt
 *.pt
 *.npy
